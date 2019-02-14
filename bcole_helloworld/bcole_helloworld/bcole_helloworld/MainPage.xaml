@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:bcole_helloworld"
+             x:Class="bcole_helloworld.MainPage"
+             BackgroundColor="RoyalBlue">
+
+    <StackLayout Spacing="12">
+        <!-- Place new controls here -->
+        <Label Text="Hello my name is Billy Cole, I'm a CS major expected to graduate next Spring!" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="White"/>
+
+        <Label Text="C# is my favorite language, so I'm very excited to learn Xamarin!"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonsterHunterListViews.MonsterInfoPage"
+             BackgroundColor="#FF1F1F1F">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source = "{Binding MonsterImageSource}"/>
+            <Label Text = "{Binding MonsterName}"
+                   TextColor="{Binding MonsterNameColor}"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding MonsterType}"
+                   TextColor="{Binding MonsterNameColor}"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding MonsterDescription}"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

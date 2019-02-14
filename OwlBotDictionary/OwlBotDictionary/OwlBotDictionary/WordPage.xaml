@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OwlBotDictionary.WordPage"
+             BackgroundColor="#FF1F1F1F"
+             >
+    <ContentPage.Content>
+            <ListView
+                x:Name="WordInfoListView"
+                BackgroundColor="#FF1F1F1F"
+                HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Padding="2">
+                                <Label
+                                        Text="{Binding Type}"
+                                        TextColor="LightGray"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Start"/>
+
+                                <Label
+                                        Text="{Binding Definition}"
+                                        LineBreakMode="CharacterWrap"
+                                        TextColor="LightGray" 
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"/>
+
+                                <Label
+                                        Text="{Binding Example}"
+                                        LineBreakMode="CharacterWrap"
+                                        TextColor="LightGray"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="End"/>
+                            </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+    </ContentPage.Content>
+</ContentPage>

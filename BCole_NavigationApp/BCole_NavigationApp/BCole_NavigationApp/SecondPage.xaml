@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BCole_NavigationApp.SecondPage"
+             Style="{StaticResource WindowTheme}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                x:Name="NameLabel"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="Center"
+                TextColor="White"/>
+
+            <Image 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Source="botw_link.png"/>
+
+            <Button
+                x:Name="PreviousPageButton"
+                Text="Previous Page"
+                Clicked="Handle_NavigateToMainPage"
+                VerticalOptions="EndAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BCole_Calculator"
+             x:Class="BCole_Calculator.MainPage"
+             BackgroundColor="#FF1F1F1F"
+             >
+    <Grid Padding="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label
+               x:Name="NumberText"
+               Grid.ColumnSpan="4"
+               Grid.Column="0"
+               Grid.Row="0"
+               TextColor="White"
+               Margin="5"
+               HorizontalTextAlignment="Center"
+               FontSize="Large"/>
+
+
+        <Button 
+            x:Name="SevenButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="0"
+            Grid.Row="1"
+            Text="7"
+            Clicked="SevenButton_Clicked"/>
+
+        <Button
+            x:Name="EightButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="8"
+            Clicked="EightButton_Clicked"/>
+
+        <Button
+            x:Name="NineButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="2"
+            Grid.Row="1"
+            Text="9"
+            Clicked="NineButton_Clicked"/>
+
+        <Button
+            x:Name="DivideButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="3"
+            Grid.Row="1"
+            Text="/"
+            Clicked="DivideButton_Clicked"/>
+
+        <Button
+            x:Name="FourButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="0"
+            Grid.Row="2"
+            Text="4"
+            Clicked="FourButton_Clicked"/>
+
+        <Button
+            x:Name="FiveButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="5"
+            Clicked="FiveButton_Clicked"/>
+
+        <Button
+            x:Name="SixButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="2"
+            Grid.Row="2"
+            Text="6"
+            Clicked="SixButton_Clicked"/>
+
+        <Button
+            x:Name="MultiplyButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="3"
+            Grid.Row="2"
+            Text="*"
+            Clicked="MultiplyButton_Clicked"/>
+
+        <Button
+            x:Name="OneButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="0"
+            Grid.Row="3"
+            Text="1"
+            Clicked="OneButton_Clicked"/>
+
+        <Button
+            x:Name="TwoButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="2"
+            Clicked="TwoButton_Clicked"/>
+
+        <Button
+            x:Name="ThreeButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="2"
+            Grid.Row="3"
+            Text="3"
+            Clicked="ThreeButton_Clicked"/>
+
+        <Button
+            x:Name="MinusButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="3"
+            Grid.Row="3"
+            Text="-"
+            Clicked="MinusButton_Clicked"/>
+
+        <Button
+            x:Name="ZeroButton"
+            Style="{StaticResource NumberButton}"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Grid.Row="4"
+            Text="0"
+            Clicked="ZeroButton_Clicked"/>
+
+        <Button
+            x:Name="PlusButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="3"
+            Grid.Row="4"
+            Text="+"
+            Clicked="PlusButton_Clicked"/>
+        <Button
+            x:Name="ClearButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="0"
+            Grid.Row="5"
+            Text="C"
+            Clicked="ClearButton_Clicked"/>
+        <Button
+            x:Name="EqualButton"
+            Style="{StaticResource OperatorButton}"
+            Grid.Column="1"
+            Grid.Row="5"
+            Grid.ColumnSpan="3"
+            Text="="
+            Clicked="EqualButton_Clicked"/>
+
+    </Grid>
+
+</ContentPage>

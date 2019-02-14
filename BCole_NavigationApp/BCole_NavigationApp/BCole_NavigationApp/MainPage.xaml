@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BCole_NavigationApp"
+             x:Class="BCole_NavigationApp.MainPage"
+             Appearing="Handle_Appearing"
+             Style="{StaticResource WindowTheme}">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Hello!" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           TextColor="White"/>
+
+        <Entry
+            x:Name="NameTextEntry"
+            Placeholder="Enter your name:"
+            TextColor="White"
+            PlaceholderColor="LightGray"
+            VerticalOptions="CenterAndExpand"/>
+
+        <Button
+            x:Name="NextPageButton"
+            Text="Next Page"
+            Clicked="Handle_NavigateToSecondPage"
+            VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
